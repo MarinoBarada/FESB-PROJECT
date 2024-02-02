@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Ivo Ivić",
+        "email": "student",
+        "password": "12345",
+        "type": "Student"
+    },
+    {
+        "id": 2,
+        "name": "Stipo Stipić",
+        "email": "profesor",
+        "password": "12345",
+        "type": "Profesor"
+    }
+]
