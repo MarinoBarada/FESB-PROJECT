@@ -4,6 +4,8 @@
         "name": "Ivo Ivić",
         "email": "student",
         "password": "12345",
+        "predmeti": ["Poslovni informacijski sustavi", "Paralelno programiranje", "Medicinski uređaji", "Multimedijski sustavi", "Grid računalni sustavi"],
+        "dolasci": [10, 8, 6, 0, 9],
         "type": "Student"
     },
     {
@@ -11,6 +13,7 @@
         "name": "Stipo Stipić",
         "email": "profesor",
         "password": "12345",
+        "predmeti": ["Smjer 120", "Smjer 250", "Medicinski uređaji", "Poslovni informacijski sustavi"],
         "type": "Profesor"
     }
 ]

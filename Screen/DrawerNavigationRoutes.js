@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
 // Import Screens
+import { View } from "react-native";
 import ScanScreen from "./DrawerScreens/ScanScreens/ScanScreen";
 import PresenceScreen from "./DrawerScreens/PresenceScreens/PresenceScreen";
 import PresenceBySubjectScreen from "./DrawerScreens/PresenceScreens/PresenceBySubjectScreen";
@@ -118,6 +119,7 @@ const ScheduleScreenStack = ({ navigation }) => {
 
 const DrawerNavigatorRoutes = (props) => {
   return (
+    
     <Drawer.Navigator
       screenOptions={{
         headerShown: false,
