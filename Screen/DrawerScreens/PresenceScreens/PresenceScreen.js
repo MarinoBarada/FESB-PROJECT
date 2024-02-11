@@ -18,17 +18,6 @@ const PresenceScreen = ({ navigation }) => {
           </Text>
           <View style={stylesPresence.profileHeaderLine} />
           <View>
-<<<<<<< Updated upstream
-          {user.predmeti.map((subject, index) => (
-            <View key={index}>
-              <Text style={stylesPresence.secondaryFont} onPress={() => navigation.navigate("Prisutnost po predmetu", {subject, index})}>
-              {subject}
-              </Text>
-              <View style={stylesPresence.profileHeaderLine} />
-            </View>
-          ))}
-        </View>
-=======
             {user.type === "Student"
               ? user.subjects.map((subject, index) => (
                   <View key={index}>
@@ -55,7 +44,6 @@ const PresenceScreen = ({ navigation }) => {
                   />
                 ))}
           </View>
->>>>>>> Stashed changes
         </View>
       </View>
     </SafeAreaView>

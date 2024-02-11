@@ -25,41 +25,12 @@ const PresenceBySubjectScreen = ({route}) => {
       }}>{`${subject}`}</Text>
       <View style={stylesSubject.profileHeaderLine} />
       <View style={{ flex: 1, padding: 16 }}>
-        <View
+        <Text
           style={{
             flex: 1,
             alignItems: "center",
             justifyContent: "center",
           }}
-<<<<<<< Updated upstream
-        >
-          <Text
-            style={{
-              fontSize: 20,
-              textAlign: "center",
-              marginBottom: 0,
-            }}
-          >
-            <Text>{`Dolasci: ${user.dolasci[index]}`}</Text>
-          </Text>
-        </View>
-      </View>
-      <View style={stylesSubject.containerHolder}>
-        <ScrollView >
-        <View style={stylesSubject.container}>
-          <Text style={stylesSubject.title}>Doughnut</Text>
-          <PieChart
-            widthAndHeight={widthAndHeight}
-            series={series}
-            sliceColor={sliceColor}
-            coverRadius={0.65}
-            coverFill={'#FFF'}
-            padAngle={0.02}
-          />
-        </View>
-        </ScrollView>
-      </View>
-=======
         >{`${subject.name}`}</Text>
         <View style={PresenceBySubject.profileHeaderLine} />
         {subject.lectures && <PiCharContainer item={subject.lectures} />}
@@ -92,22 +63,14 @@ const PresenceBySubjectScreen = ({route}) => {
             ))
           ) : null}
         </View>
-
-      </ScrollView>
->>>>>>> Stashed changes
+        </View>
+      
     </SafeAreaView>
   );
 };
 
 export default PresenceBySubjectScreen;
 
-<<<<<<< Updated upstream
-const stylesSubject = StyleSheet.create({
-  secondaryFont: {
-    fontSize: 24,
-    marginBottom: 17,
-    marginTop: 17,
-=======
 const PresenceBySubject = StyleSheet.create({
   mapara: {
     flexDirection: 'row',
@@ -124,30 +87,12 @@ const PresenceBySubject = StyleSheet.create({
   },
   font: {
     fontSize: 20
->>>>>>> Stashed changes
   },
   profileHeaderLine: {
     height: 1,
     backgroundColor: "#004A8F",
     marginTop: 5,
   },
-<<<<<<< Updated upstream
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  containerHolder: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-  },
-  title: {
-    fontSize: 24,
-    margin: 10,
-  },
-});
-=======
   rowContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -170,4 +115,3 @@ const PresenceBySubject = StyleSheet.create({
     fontWeight: 700
   },
 });
->>>>>>> Stashed changes
