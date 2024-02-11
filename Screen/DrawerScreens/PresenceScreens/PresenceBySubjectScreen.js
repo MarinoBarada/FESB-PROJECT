@@ -7,21 +7,16 @@ const PresenceBySubjectScreen = ({ route }) => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Text>{userComesCalc*100}</Text>
-      <Text>{userComeReverse}</Text>
-      <Text style={{
-        fontSize: 24,
-        textAlign: "center",
-        marginBottom: 16,
-        marginTop: 90,
-      }}>{`${subject}`}</Text>
-      <View style={stylesSubject.profileHeaderLine} />
+      <ScrollView>
       <View style={{ flex: 1, padding: 16 }}>
         <Text
           style={{
             flex: 1,
             alignItems: "center",
             justifyContent: "center",
+            fontSize: 30,
+            marginTop: 90,
+            marginBottom: 5
           }}
         >{`${subject.name}`}</Text>
         <View style={PresenceBySubject.profileHeaderLine} />
@@ -56,7 +51,7 @@ const PresenceBySubjectScreen = ({ route }) => {
           ) : null}
         </View>
         </View>
-      
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -84,6 +79,7 @@ const PresenceBySubject = StyleSheet.create({
     height: 1,
     backgroundColor: "#004A8F",
     marginTop: 5,
+    marginBottom: 30
   },
   rowContainer: {
     flexDirection: 'row',

@@ -78,9 +78,6 @@
         "name": "Stipo Stipić",
         "email": "profesor",
         "password": "12345",
-<<<<<<< Updated upstream
-        "predmeti": ["Smjer 120", "Smjer 250", "Medicinski uređaji", "Poslovni informacijski sustavi"],
-=======
         "courses": [
             {
                 "id": 120,
@@ -121,7 +118,6 @@
                 ]
             }
         ],
->>>>>>> Stashed changes
         "type": "Profesor"
     }
 ]
