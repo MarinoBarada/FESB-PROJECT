@@ -13,7 +13,50 @@
         "name": "Stipo Stipić",
         "email": "profesor",
         "password": "12345",
+<<<<<<< Updated upstream
         "predmeti": ["Smjer 120", "Smjer 250", "Medicinski uređaji", "Poslovni informacijski sustavi"],
+=======
+        "courses": [
+            {
+                "id": 120,
+                "subjects": [
+                    {
+                        "name": "Poslovni sustavi",
+                        "participants": [
+                            "Jure Juric",
+                            "Mate Matic",
+                            "Snjesko Snjeskic"
+                        ],
+                        "participantsPred": [
+                            12, 3, 5
+                        ],
+                        "participantsLab": [
+                            2, 5, 2
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "subjects": [
+                    {
+                        "name": "Poslovni informacijski sustavi",
+                        "participants": [
+                            "Matko Matkic",
+                            "Ivica Todoric",
+                            "Zdravko Mamic"
+                        ],
+                        "participantsPred": [
+                            12, 3, 5
+                        ],
+                        "participantsLab": [
+                            2, 5, 2
+                        ]
+                    }
+                ]
+            }
+        ],
+>>>>>>> Stashed changes
         "type": "Profesor"
     }
 ]

@@ -69,7 +69,7 @@ const LoginScreen = ({ navigation }) => {
           alignContent: "center",
         }}
       >
-        <View>
+        <View style={{position: 'relative', top: -120}}>
           <KeyboardAvoidingView enabled>
             <View style={{ alignItems: "center" }}>
               <Image
