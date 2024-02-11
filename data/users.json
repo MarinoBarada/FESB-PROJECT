@@ -85,7 +85,15 @@
                     {
                         "name": "Poslovni sustavi",
                         "participants": [
-                            1
+                            "Jure Juric",
+                            "Mate Matic",
+                            "Snjesko Snjeskic"
+                        ],
+                        "participantsPred": [
+                            12, 3, 5
+                        ],
+                        "participantsLab": [
+                            2, 5, 2
                         ]
                     }
                 ]
@@ -96,7 +104,15 @@
                     {
                         "name": "Poslovni informacijski sustavi",
                         "participants": [
-                            1
+                            "Matko Matkic",
+                            "Ivica Todoric",
+                            "Zdravko Mamic"
+                        ],
+                        "participantsPred": [
+                            12, 3, 5
+                        ],
+                        "participantsLab": [
+                            2, 5, 2
                         ]
                     }
                 ]

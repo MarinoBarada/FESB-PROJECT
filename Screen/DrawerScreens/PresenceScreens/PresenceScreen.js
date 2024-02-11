@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   View,
   Text,
   SafeAreaView,
   StyleSheet,
-  TouchableOpacity,
-  Image,
 } from "react-native";
 import { useSelector } from "react-redux";
 import DropdownButton from "../../Components/DropdownButton";
@@ -45,6 +43,7 @@ const PresenceScreen = ({ navigation }) => {
                 ))
               : // Do something else here if user type is not "Student"
                 user.courses.map((course, index) => (
+                  
                   <DropdownButton
                     key={index}
                     course={course}
