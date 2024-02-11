@@ -1,9 +1,18 @@
-import React from "react";
-import { View, Text, SafeAreaView, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+} from "react-native";
 import { useSelector } from "react-redux";
+import DropdownButton from "../../Components/DropdownButton";
 
 const PresenceScreen = ({ navigation }) => {
   const user = useSelector((state) => state.setUser);
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, padding: 16, marginTop: 80 }}>
@@ -11,10 +20,10 @@ const PresenceScreen = ({ navigation }) => {
           <Text
             style={{
               fontSize: 36,
-              color: '#004A8F',
+              color: "#004A8F",
             }}
           >
-          <Text>{user.type}</Text>
+            <Text>{user.type == "Student" ? "Predmeti" : "Smjerovi"}</Text>
           </Text>
           <View style={stylesPresence.profileHeaderLine} />
           <View>

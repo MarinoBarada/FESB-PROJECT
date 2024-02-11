@@ -1,18 +1,10 @@
 import React from "react";
-import { View, Text, SafeAreaView, StyleSheet,  ScrollView } from "react-native";
-import { useSelector } from "react-redux";
-import PieChart from 'react-native-pie-chart'
+import { View, Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
+import PiCharContainer from "../../Components/PiCharContainer";
 
-const PresenceBySubjectScreen = ({route}) => {
-  const user = useSelector((state) => state.setUser);
-  const { subject, index } = route.params;
+const PresenceBySubjectScreen = ({ route }) => {
+  const { subject } = route.params;
 
-  const widthAndHeight = 250
-  const userComes = (user.dolasci[index])
-  const userComesCalc = userComes/13
-  const userComeReverse = -(userComesCalc*100)+100
-  const series = [userComesCalc*100, userComeReverse]
-  const sliceColor = ['#004A8F', '#C4D5E5']
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Text>{userComesCalc*100}</Text>
@@ -115,3 +107,4 @@ const PresenceBySubject = StyleSheet.create({
     fontWeight: 700
   },
 });
+
